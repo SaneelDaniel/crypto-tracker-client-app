@@ -80,6 +80,9 @@ function Body() {
         .catch((err) => {
           window.alert(err);
         });
+    } else {
+      setDataFound(false);
+      window.alert("Please Enter a supported Value");
     }
   };
 
@@ -111,6 +114,9 @@ function Body() {
         sendDataRequest();
         setDataFound(true);
       });
+    } else {
+      setDataFound(false);
+      window.alert("Please Enter a supported Value");
     }
   };
 
@@ -147,7 +153,7 @@ function Body() {
               fontSize: "20px",
             }}
           >
-            Overview
+            Get Quote
           </button>
         </div>
       </div>
@@ -170,8 +176,8 @@ function Body() {
             </h3>
             <PlotGraph />
           </div>
-        ) : dataFound && (
-          <h3>Plot not supported</h3>
+        ) : (
+          dataFound && <h3>Plot not supported</h3>
         )}
       </div>
     </div>

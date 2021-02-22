@@ -11,7 +11,6 @@ function PlotGraph() {
     AppContext
   );
   var w = window.innerWidth;
-  var h = window.innerHeight;
   var plotw = w * (3.5 / 4);
 
   useEffect(() => {}, [searchObjectQuote, sortedXValues, sortedYValues]);
@@ -59,7 +58,7 @@ function PlotGraph() {
           },
         ]}
         layout={{
-          width: plotw,
+          width: w * 0.9,
           height: 740,
           backgroundColor: "gray",
           xaxis: {
