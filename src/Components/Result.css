@@ -1,0 +1,40 @@
+.results__main {
+  border-radius: 10px;
+  flex-direction: column;
+  display: flex;
+}
+
+.data__view {
+  align-self: flex-start;
+  margin-top: 20px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.table th {
+  padding: 12px;
+  text-align: left;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+}
+
+.table tr {
+  font-weight: 500;
+  border: 1px solid darkgray;
+}
+
+.table td {
+  border: 1px solid darkgray;
+  padding: 10px;
+}
+
+.plot {
+  align-self: flex-end;
+}
